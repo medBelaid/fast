@@ -21,20 +21,20 @@ class __TwigTemplate_8f7c2d562530fa016cb77ff191de722b085e6eaf4d0297f715e3451923d
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_e754513f06685bbdfde440f1e96800ec74b4745fc4ff507ad52b2c334cffa0b4 = $this->env->getExtension("native_profiler");
-        $__internal_e754513f06685bbdfde440f1e96800ec74b4745fc4ff507ad52b2c334cffa0b4->enter($__internal_e754513f06685bbdfde440f1e96800ec74b4745fc4ff507ad52b2c334cffa0b4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EcommerceBundle:Default:produits/layout/produits.html.twig"));
+        $__internal_a8afec07379230423ae2f83b735391df4b6286f79d62d068be7cd82f6fa53ba7 = $this->env->getExtension("native_profiler");
+        $__internal_a8afec07379230423ae2f83b735391df4b6286f79d62d068be7cd82f6fa53ba7->enter($__internal_a8afec07379230423ae2f83b735391df4b6286f79d62d068be7cd82f6fa53ba7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EcommerceBundle:Default:produits/layout/produits.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_e754513f06685bbdfde440f1e96800ec74b4745fc4ff507ad52b2c334cffa0b4->leave($__internal_e754513f06685bbdfde440f1e96800ec74b4745fc4ff507ad52b2c334cffa0b4_prof);
+        $__internal_a8afec07379230423ae2f83b735391df4b6286f79d62d068be7cd82f6fa53ba7->leave($__internal_a8afec07379230423ae2f83b735391df4b6286f79d62d068be7cd82f6fa53ba7_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_28ac622f0edcc284cbb280cdca799a0fb4c9226345bd547cd91ef794ac962796 = $this->env->getExtension("native_profiler");
-        $__internal_28ac622f0edcc284cbb280cdca799a0fb4c9226345bd547cd91ef794ac962796->enter($__internal_28ac622f0edcc284cbb280cdca799a0fb4c9226345bd547cd91ef794ac962796_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_4fd215ba6dd16a9aa5f1a63cc48f2dc9f27aedf1e6b64574720636c190b32730 = $this->env->getExtension("native_profiler");
+        $__internal_4fd215ba6dd16a9aa5f1a63cc48f2dc9f27aedf1e6b64574720636c190b32730->enter($__internal_4fd215ba6dd16a9aa5f1a63cc48f2dc9f27aedf1e6b64574720636c190b32730_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "
@@ -53,10 +53,10 @@ class __TwigTemplate_8f7c2d562530fa016cb77ff191de722b085e6eaf4d0297f715e3451923d
                         <div class=\"overlay-text posy-bottom posx-left col-light\">
                             <div class=\"inner\">
 
-                                <h1 class=\"text-1\"><span class=\"scaled-text\"><span style=\"font-weight:100\">RED HOT SWIMWEAR</span></span></h1>
+                                <h1 class=\"text-1\"><span class=\"scaled-text\"><span style=\"font-weight:100\">Tampons personalis&eacute;es</span></span></h1>
 
 
-                                <h2 class=\"text-2\"><span class=\"scaled-text\">View the collection &raquo;</span></h2>
+                                <h2 class=\"text-2\"><span class=\"scaled-text\">Voir la collection &raquo;</span></h2>
 
                             </div>
                         </div>
@@ -265,7 +265,7 @@ class __TwigTemplate_8f7c2d562530fa016cb77ff191de722b085e6eaf4d0297f715e3451923d
 
 ";
         
-        $__internal_28ac622f0edcc284cbb280cdca799a0fb4c9226345bd547cd91ef794ac962796->leave($__internal_28ac622f0edcc284cbb280cdca799a0fb4c9226345bd547cd91ef794ac962796_prof);
+        $__internal_4fd215ba6dd16a9aa5f1a63cc48f2dc9f27aedf1e6b64574720636c190b32730->leave($__internal_4fd215ba6dd16a9aa5f1a63cc48f2dc9f27aedf1e6b64574720636c190b32730_prof);
 
     }
 
@@ -300,10 +300,10 @@ class __TwigTemplate_8f7c2d562530fa016cb77ff191de722b085e6eaf4d0297f715e3451923d
 /*                         <div class="overlay-text posy-bottom posx-left col-light">*/
 /*                             <div class="inner">*/
 /* */
-/*                                 <h1 class="text-1"><span class="scaled-text"><span style="font-weight:100">RED HOT SWIMWEAR</span></span></h1>*/
+/*                                 <h1 class="text-1"><span class="scaled-text"><span style="font-weight:100">Tampons personalis&eacute;es</span></span></h1>*/
 /* */
 /* */
-/*                                 <h2 class="text-2"><span class="scaled-text">View the collection &raquo;</span></h2>*/
+/*                                 <h2 class="text-2"><span class="scaled-text">Voir la collection &raquo;</span></h2>*/
 /* */
 /*                             </div>*/
 /*                         </div>*/
