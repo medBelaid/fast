@@ -6,9 +6,9 @@
 {% if error %}
     <div>{{ error|trans }}</div>
 {% endif %}
-<div class="row">
-    <div class="span12">
-        <h2>Connexion</h2>
+    <div id="content">
+        <div class="block">
+        <div class="bigTitle">Connexion</div>
         <div id="collapseOne" class="accordion-body collapse in">
             <div class="accordion-inner">
                 <div class="span4">
@@ -18,7 +18,7 @@
                         afin de passer votre commande et de manger équilibré.
                     </em>
                     <br /><br />
-                    <a href="{{ path('fos_user_registration_register') }}" class="btn btn-primary">S'inscrire</a>
+                    <a href="{{ path('fos_user_registration_register') }}" class="btn">S'inscrire</a>
 
                 </div>
 
@@ -42,5 +42,5 @@
             </div>
         </div>
     </div>
-</div>
+    </div>
 {% endblock fos_user_content %}

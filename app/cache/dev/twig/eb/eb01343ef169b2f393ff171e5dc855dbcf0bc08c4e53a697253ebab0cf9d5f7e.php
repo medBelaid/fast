@@ -21,20 +21,20 @@ class __TwigTemplate_7579b9350c49fde218e7cfd6da563ab92c4f6eb5e55e80a42452f3796b5
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_257ebbcc2c7b8f624511756722770d49f83618c71f97abc59ec0b02665c48c68 = $this->env->getExtension("native_profiler");
-        $__internal_257ebbcc2c7b8f624511756722770d49f83618c71f97abc59ec0b02665c48c68->enter($__internal_257ebbcc2c7b8f624511756722770d49f83618c71f97abc59ec0b02665c48c68_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FOSUserBundle:Security:login.html.twig"));
+        $__internal_1bd50c347baa97a0fb4824d97af7bea9375aa97fe44549194bddf555cb32206a = $this->env->getExtension("native_profiler");
+        $__internal_1bd50c347baa97a0fb4824d97af7bea9375aa97fe44549194bddf555cb32206a->enter($__internal_1bd50c347baa97a0fb4824d97af7bea9375aa97fe44549194bddf555cb32206a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FOSUserBundle:Security:login.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_257ebbcc2c7b8f624511756722770d49f83618c71f97abc59ec0b02665c48c68->leave($__internal_257ebbcc2c7b8f624511756722770d49f83618c71f97abc59ec0b02665c48c68_prof);
+        $__internal_1bd50c347baa97a0fb4824d97af7bea9375aa97fe44549194bddf555cb32206a->leave($__internal_1bd50c347baa97a0fb4824d97af7bea9375aa97fe44549194bddf555cb32206a_prof);
 
     }
 
     // line 5
     public function block_fos_user_content($context, array $blocks = array())
     {
-        $__internal_891da4a2811affef5645479794b033df4edd9035f87e5843add8e8a2f89cb3b3 = $this->env->getExtension("native_profiler");
-        $__internal_891da4a2811affef5645479794b033df4edd9035f87e5843add8e8a2f89cb3b3->enter($__internal_891da4a2811affef5645479794b033df4edd9035f87e5843add8e8a2f89cb3b3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "fos_user_content"));
+        $__internal_08c1729080beab9d224feedce8fab16a7fa46f7e85c64af98b1c893ebf91ba2a = $this->env->getExtension("native_profiler");
+        $__internal_08c1729080beab9d224feedce8fab16a7fa46f7e85c64af98b1c893ebf91ba2a->enter($__internal_08c1729080beab9d224feedce8fab16a7fa46f7e85c64af98b1c893ebf91ba2a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "fos_user_content"));
 
         // line 6
         if ((isset($context["error"]) ? $context["error"] : $this->getContext($context, "error"))) {
@@ -45,9 +45,9 @@ class __TwigTemplate_7579b9350c49fde218e7cfd6da563ab92c4f6eb5e55e80a42452f3796b5
 ";
         }
         // line 9
-        echo "<div class=\"row\">
-    <div class=\"span12\">
-        <h2>Connexion</h2>
+        echo "    <div id=\"content\">
+        <div class=\"block\">
+        <div class=\"bigTitle\">Connexion</div>
         <div id=\"collapseOne\" class=\"accordion-body collapse in\">
             <div class=\"accordion-inner\">
                 <div class=\"span4\">
@@ -60,7 +60,7 @@ class __TwigTemplate_7579b9350c49fde218e7cfd6da563ab92c4f6eb5e55e80a42452f3796b5
                     <a href=\"";
         // line 21
         echo $this->env->getExtension('routing')->getPath("fos_user_registration_register");
-        echo "\" class=\"btn btn-primary\">S'inscrire</a>
+        echo "\" class=\"btn\">S'inscrire</a>
 
                 </div>
 
@@ -105,10 +105,10 @@ class __TwigTemplate_7579b9350c49fde218e7cfd6da563ab92c4f6eb5e55e80a42452f3796b5
             </div>
         </div>
     </div>
-</div>
+    </div>
 ";
         
-        $__internal_891da4a2811affef5645479794b033df4edd9035f87e5843add8e8a2f89cb3b3->leave($__internal_891da4a2811affef5645479794b033df4edd9035f87e5843add8e8a2f89cb3b3_prof);
+        $__internal_08c1729080beab9d224feedce8fab16a7fa46f7e85c64af98b1c893ebf91ba2a->leave($__internal_08c1729080beab9d224feedce8fab16a7fa46f7e85c64af98b1c893ebf91ba2a_prof);
 
     }
 
@@ -135,9 +135,9 @@ class __TwigTemplate_7579b9350c49fde218e7cfd6da563ab92c4f6eb5e55e80a42452f3796b5
 /* {% if error %}*/
 /*     <div>{{ error|trans }}</div>*/
 /* {% endif %}*/
-/* <div class="row">*/
-/*     <div class="span12">*/
-/*         <h2>Connexion</h2>*/
+/*     <div id="content">*/
+/*         <div class="block">*/
+/*         <div class="bigTitle">Connexion</div>*/
 /*         <div id="collapseOne" class="accordion-body collapse in">*/
 /*             <div class="accordion-inner">*/
 /*                 <div class="span4">*/
@@ -147,7 +147,7 @@ class __TwigTemplate_7579b9350c49fde218e7cfd6da563ab92c4f6eb5e55e80a42452f3796b5
 /*                         afin de passer votre commande et de manger équilibré.*/
 /*                     </em>*/
 /*                     <br /><br />*/
-/*                     <a href="{{ path('fos_user_registration_register') }}" class="btn btn-primary">S'inscrire</a>*/
+/*                     <a href="{{ path('fos_user_registration_register') }}" class="btn">S'inscrire</a>*/
 /* */
 /*                 </div>*/
 /* */
@@ -171,6 +171,6 @@ class __TwigTemplate_7579b9350c49fde218e7cfd6da563ab92c4f6eb5e55e80a42452f3796b5
 /*             </div>*/
 /*         </div>*/
 /*     </div>*/
-/* </div>*/
+/*     </div>*/
 /* {% endblock fos_user_content %}*/
 /* */
