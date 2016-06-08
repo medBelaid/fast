@@ -1,0 +1,40 @@
+﻿change title
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch FEATURE-manage-commandes-administration
+# Changes to be committed:
+#	modified:   .idea/workspace.xml
+#	modified:   app/Resources/views/layout/layout.html.twig
+#	new file:   app/cache/dev/annotations/ef6c9ef05ef5facf6ee06836d60c137b34e7f89c#ajouterAction.cache.php
+#	new file:   app/cache/dev/annotations/ef6c9ef05ef5facf6ee06836d60c137b34e7f89c#panierAction.cache.php
+#	new file:   app/cache/dev/profiler/21/70/8e7021
+#	new file:   app/cache/dev/profiler/29/67/9f6729
+#	new file:   app/cache/dev/profiler/2c/ac/81ac2c
+#	new file:   app/cache/dev/profiler/2d/5e/cd5e2d
+#	new file:   app/cache/dev/profiler/2e/b5/33b52e
+#	new file:   app/cache/dev/profiler/35/be/c2be35
+#	new file:   app/cache/dev/profiler/38/3f/cb3f38
+#	new file:   app/cache/dev/profiler/3a/87/48873a
+#	new file:   app/cache/dev/profiler/3b/a8/fda83b
+#	new file:   app/cache/dev/profiler/3c/2b/852b3c
+#	new file:   app/cache/dev/profiler/44/2f/d72f44
+#	new file:   app/cache/dev/profiler/5f/58/49585f
+#	new file:   app/cache/dev/profiler/61/32/a73261
+#	new file:   app/cache/dev/profiler/61/b0/4fb061
+#	new file:   app/cache/dev/profiler/62/dc/7adc62
+#	new file:   app/cache/dev/profiler/6a/6c/746c6a
+#	new file:   app/cache/dev/profiler/7f/9f/989f7f
+#	new file:   app/cache/dev/profiler/8c/11/f3118c
+#	new file:   app/cache/dev/profiler/9d/50/ac509d
+#	new file:   app/cache/dev/profiler/a0/c3/e4c3a0
+#	new file:   app/cache/dev/profiler/a4/39/a939a4
+#	new file:   app/cache/dev/profiler/b3/12/3b12b3
+#	new file:   app/cache/dev/profiler/bf/de/93debf
+#	new file:   app/cache/dev/profiler/ea/a3/6aa3ea
+#	modified:   app/cache/dev/profiler/index.csv
+#	new file:   app/cache/dev/twig/12/d5/faa6e5d58fc9f7bc64c5a806b6b5bea1e7ec9fbc8865c56181705b23e218.php
+#	modified:   app/cache/dev/twig/52/19/abe456ef0f15c0e38b63336777634194fca971763d310a1624728621f3d0.php
+#	modified:   app/logs/dev.log
+#	modified:   src/Ecommerce/EcommerceBundle/Resources/views/Default/panier/layout/panier.html.twig
+#
+

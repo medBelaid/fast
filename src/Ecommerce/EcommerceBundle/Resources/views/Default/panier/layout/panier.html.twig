@@ -1,0 +1,78 @@
+{% extends "::layout/layout.html.twig" %}
+
+{% set totalHT = 0 %}
+{% set totalTTC = 0%}
+{% set refTva = {} %}
+{% for produit in produits %}
+    {% set refTva = refTva|merge({ ('%' ~ produit.tva.valeur) : 0 }) %}
+{% endfor %}
+
+{% block body %}
+    <div id="content">
+    <div class="block">
+            
+            {% for flashMessage in app.session.flashbag.get('success') %}
+                <div class="alert alert-success">
+                    {{ flashMessage }}
+                </div>
+            {% endfor %}
+
+        <h1 class="pagetitle double-padded">Votre panier</h1>
+
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Photo</th>
+                        <th>Références</th>
+                        <th>Quantité</th>
+                        <th>Prix unitaire</th>
+                        <th>Total HT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% if produits|length == 0 %}
+                        <tr>
+                            <td colspan="4"><center>Aucun articles dans votre panier</center></td>
+                        </tr>
+                    {% endif %}
+                    
+                    {% for produit in produits %}
+                    <tr>
+                        <form action="{{ path('ajouter', { 'id' : produit.id }) }}" method="get">
+
+                            <td>
+                                <a class="remove toggler" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet élément?')" href="{{ path('supprimer', { 'id' : produit.id }) }}">×</a>
+                                <div class="image">
+                                    <a href="{{ path('presentation', { 'id' : produit.id }) }}"><img src="{{ produit.image.AssetPath|imagine_filter('produit') }}" alt="{{ produit.nom }}" width="100" height="50"></a>
+                                </div>
+                            </td>
+
+                            <td>{{ produit.nom }}</td>
+                            <td><input id="quantity" name="qte" value="{{ panier[produit.id] }}" size="2" /></td>
+                            <td>{{ produit.prix }} dt</td>
+                            <td>{{ produit.prix * panier[produit.id] }} dt</td>
+                        </form>
+                    </tr>
+                    {% set totalHT = totalHT + (produit.prix * panier[produit.id]) %}
+                    {% set totalTTC = totalTTC + (produit.prix * panier[produit.id])|tva(produit.tva.multiplicate) %}
+                    {% set refTva = refTva|merge({ ('%' ~ produit.tva.valeur) : refTva['%' ~ produit.tva.valeur] + ( produit.prix * panier[produit.id])|montantTva(produit.tva.multiplicate) }) %}
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% if produits|length != 0 %}
+            <dl class="dl-horizontal pull-right">
+                <dt>Total HT :</dt><dd>{{ totalHT }} dt</dd>
+                
+                {% for key, tva in refTva %}
+                    <dt>TVA {{ key }} :</dt><dd>{{ tva }} dt</dd>
+                {% endfor %}
+
+                <dt>Total TTC :</dt><dd>{{ totalTTC }} dt</dd>
+            </dl>
+            <div class="clearfix"></div>
+            <a href="{{ path('livraison') }}" class="btn pull-right">Valider mon panier</a>
+            {% endif %}
+            <a href="{{ path('produits') }}" class="btn">Continuer mes achats</a>
+        </div></div>
+
+{% endblock %}

@@ -1,0 +1,20 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_driver: pdo_mysql
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: ecommerce
+    database_user: root
+    database_password: null
+    mailer_transport: smtp
+    mailer_encryption: ssl
+    mailer_host: smtp.gmail.com
+    mailer_user: medbbelaid@gmail.com
+    mailer_password: 119304647
+    locale: fr
+    secret: ThisTokenIsNotSoSecretChangeIt
+twig:
+    globals:
+        telephone: '+216 52 544 398'
+        fax: '02 35 00 00 00'
+        adresse: 'rue Farhat Hached Sahline Tunisie'

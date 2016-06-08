@@ -1,0 +1,159 @@
+{% extends "::layout/layout.html.twig" %}
+
+{% block body %}
+
+    <div id="content">
+
+        <div class="flexslider type-header scaled-text-base">
+            <ul class="slides">
+
+                <li class="slide slide-1">
+                    <a href="collections/swimwear.html">
+                        <img src="{{ asset('assets/slide_1f6e3.jpg?12592113263448129181') }}" alt="Slide 1" />
+
+                        <div class="overlay-text posy-bottom posx-left col-light">
+                            <div class="inner">
+
+                                <h1 class="text-1"><span class="scaled-text"><span style="font-weight:100">RED HOT SWIMWEAR</span></span></h1>
+
+
+                                <h2 class="text-2"><span class="scaled-text">View the collection &raquo;</span></h2>
+
+                            </div>
+                        </div>
+
+                    </a>
+                </li>
+
+                <li class="slide slide-2">
+                    <a href="collections/swimwear.html">
+                        <img src="{{ asset('assets/slide_2f6e3.jpg?12592113263448129181') }}" alt="Slide 2" />
+
+                        <div class="overlay-text posy-top posx-left col-dark">
+                            <div class="inner">
+
+                                <h1 class="text-1"><span class="scaled-text"><span style="font-weight:100">WALK ON WATER</span></span></h1>
+
+
+                                <h2 class="text-2"><span class="scaled-text">Shop Swim &raquo;</span></h2>
+
+                            </div>
+                        </div>
+
+                    </a>
+                </li>
+
+                <li class="slide slide-3">
+                    <a href="https://themes.shopify.com/themes/masonry/styles/flamingo/?ref=cleancanvas">
+                        <img src="{{ asset('assets/slide_3f6e3.jpg?12592113263448129181') }}" alt="Slide 3" />
+
+                        <div class="overlay-text posy-top posx-left col-light">
+                            <div class="inner">
+
+                                <h1 class="text-1"><span class="scaled-text"><span style="font-weight:100">MASONRY<br />for Shopify</span></span></h1>
+
+
+                                <h2 class="text-2"><span class="scaled-text">Trial this theme today</span></h2>
+
+                            </div>
+                        </div>
+
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+
+        <div class="blocklayout">
+           {% if produits|length != 0 %}
+               {% for produit in produits %}
+            <div class="block product size-medium initially-hidden">
+                <div class="main">
+                    <a class="img-link" href="{{ path('presentation', { 'id' : produit.id }) }}" title="{{ produit.nom }}">
+
+                        <img src="{{ produit.image.AssetPath|imagine_filter('produitThumb') }}" alt="{{ produit.image.name }}" />
+                    </a>
+
+
+                    <div class="quick-buy-row">
+                        <a href="#" class="quick-buy button">Aperçu rapide +</a>
+                    </div>
+
+                </div>
+
+                <div class="sub">
+                    <div><a class="title" href="{{ path('presentation', { 'id' : produit.id }) }}">{{ produit.nom }}</a></div>
+                    <div class="pricearea">
+
+
+                        <span class="price">{{ produit.prix|tva(produit.tva.multiplicate) }} dt</span>
+                    </div>
+
+
+                </div>
+
+
+                <script>productJSON.id106090352 = {"id":106090352,"title":"Aspen","handle":"aspen","description":"\u003cmeta charset=\"utf-8\"\u003e\n\u003cp\u003e\u003cem\u003eThis is a demonstration store.\u003c\/em\u003e\u003c\/p\u003e\n\u003cp\u003eYou can purchase or trial this theme by heading here: \u003c\/p\u003e\n\u003cp\u003e\u003ca href=\"https:\/\/themes.shopify.com\/designers\/cleancanvas?ref=cleancanvas\" target=\"_blank\" title=\"Clean Themes for Shopify\"\u003ehttps:\/\/themes.shopify.com\/designers\/cleancanvas\u003c\/a\u003e\u003c\/p\u003e\n\u003cp\u003eYour product description may be the tipping point toward a sale, make sure your customers get all the information they need to help them make a decision! Our theme supports image swapping (eg. choose a color and the images swap automatically to match the selection).\u003c\/p\u003e\n\u003cp\u003eYou can also upload as many product images as you need.\u003c\/p\u003e","published_at":"2012-09-27T08:28:00-04:00","created_at":"2012-09-27T08:28:59-04:00","vendor":"Flamingo","type":"Swimwear","tags":["Beige","Delicious","Separates","Stretch"],"price":2999,"price_min":2999,"price_max":2999,"available":true,"price_varies":false,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":243178390,"title":"Default Title","option1":"Default Title","option2":null,"option3":null,"sku":"","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"options":["Default Title"],"price":2999,"weight":0,"compare_at_price":null,"inventory_quantity":-8,"inventory_management":null,"inventory_policy":"deny","barcode":null}],"images":["\/\/cdn.shopify.com\/s\/files\/1\/0183\/5415\/products\/shutterstock_109310339.jpeg?v=1348748941"],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/0183\/5415\/products\/shutterstock_109310339.jpeg?v=1348748941","options":["Style"],"content":"\u003cmeta charset=\"utf-8\"\u003e\n\u003cp\u003e\u003cem\u003eThis is a demonstration store.\u003c\/em\u003e\u003c\/p\u003e\n\u003cp\u003eYou can purchase or trial this theme by heading here: \u003c\/p\u003e\n\u003cp\u003e\u003ca href=\"https:\/\/themes.shopify.com\/designers\/cleancanvas?ref=cleancanvas\" target=\"_blank\" title=\"Clean Themes for Shopify\"\u003ehttps:\/\/themes.shopify.com\/designers\/cleancanvas\u003c\/a\u003e\u003c\/p\u003e\n\u003cp\u003eYour product description may be the tipping point toward a sale, make sure your customers get all the information they need to help them make a decision! Our theme supports image swapping (eg. choose a color and the images swap automatically to match the selection).\u003c\/p\u003e\n\u003cp\u003eYou can also upload as many product images as you need.\u003c\/p\u003e"};</script>
+                <script id="product-block-template-106090352" type="text/template">
+                    <form class="quickbuy-form cf" action="{{ path('ajouter', { 'id' : produit.id }) }}" method="get" enctype="multipart/form-data" id="product-form">
+                        <div id="product-gallery">
+
+                            <div class="main-image onlyimage">
+                                <div class="bip" title="Aspen" data-index="0">
+                                    <img src="{{ produit.image.AssetPath|imagine_filter('produit') }}" alt="{{ produit.image.name }}"/>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="product-info">
+                            <div class="inner">
+                                <div class="majorinfo ">
+
+                                    <h1 class="product-title">{{ produit.nom }}</h1>
+                                    <div class="pricearea">{{ produit.prix|tva(produit.tva.multiplicate) }} dt</div>
+                                </div>
+
+                                <div class="productoptions section">
+
+
+                                    <input type="hidden" name="id" value="243178390" />
+
+                                    {% if panier[produit.id] is not defined %}
+                                    <div>
+                                        <label for="quantity">Quantité</label>
+
+                                            <a class="btn" href="{{ path('ajouter', { 'id' : produit.id }) }}">Ajouter au panier</a>
+                                        <div class="quantadd">
+                                            <input id="quantity" name="qte" value="1" size="2" />
+                                            <input type="submit" name="add" id="add-to-cart" value="Ajouter au panier" />
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endif %}
+
+
+                                <div class="section"><a href="{{ path('presentation', { 'id' : produit.id }) }}" title="">Voir tous les d&eacute;tails <span class="icon-arrow3-right"></span></a></div>
+                            </div>
+                        </div>
+                    </form>
+                </script>
+
+            </div>
+                   {% endfor %}
+
+               <div class="navigation">
+                   {{ knp_pagination_render(produits) }}
+               </div>
+
+           {% else %}
+               Aucun produit
+               {% endif %}
+
+
+        </div>
+
+
+    </div>
+
+{% endblock %}

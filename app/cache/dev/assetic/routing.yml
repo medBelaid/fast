@@ -1,0 +1,5 @@
+_assetic:
+    resource: .
+    type: assetic
+_app:
+    resource: 'C:\Users\Mohamed\Documents\GitHub\Ecommerce-0.18\app/config/routing_dev.yml'

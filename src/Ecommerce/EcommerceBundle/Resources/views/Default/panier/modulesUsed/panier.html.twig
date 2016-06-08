@@ -1,0 +1,13 @@
+<div class="cartsummary">
+    <span class="icon-bag2"></span>Panier<br>
+            <a href="{{ path('panier') }}">
+                {% if articles == 0 %}
+                    Aucun article dans votre panier
+                {% elseif articles == 1 %}
+                    1 article dans votre panier
+                {% else %}
+                    {{ articles }} articles dans votre panier
+                {% endif %}
+            </a>
+</div>
+
